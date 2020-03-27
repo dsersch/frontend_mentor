@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    width: 45%;
+    padding: 40px;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    letter-spacing: 0px;
+}
+
+.text p {
+    line-height: 1.7;
+}
+
+.info {
+    background-color: hsl(248, 32%, 49%);
+    padding: 5px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 13px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 0 rgba(40, 40, 40, 0.2);
+}
+
+.info span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 0 rgba(40, 40, 40, 0.2);
+}
+
+.card p {
+    color: hsl(246, 25%, 77%);
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 -2px 0 rgba(40, 40, 40, 0.2) inset;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(154, 69%, 61%);
+}
+
+.terms {
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%)
+}
