@@ -98,6 +98,10 @@ button {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
 button:hover {
     background-color: hsl(154, 69%, 61%);
 }
@@ -119,3 +123,28 @@ a, a:visited {
     text-align: right;
     margin-top: 3px;
 }
+
+@media only screen and (max-width: 400px) {
+    body {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+  }
