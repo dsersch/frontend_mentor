@@ -54,24 +54,29 @@ body {
 .card {
     background-color: white;
     text-align: center;
-    height: 400px;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 10px 0 rgba(40, 40, 40, 0.2);
 }
 
-.card p {
-    color: hsl(246, 25%, 77%);
+.input_section {
+    margin-bottom: 22px;
 }
 
 input {
     display: block;
     width: 100%;
-    margin-bottom: 22px;
     padding: 13px;
     border-radius: 5px;
     border: 1px solid hsl(246, 25%, 77%);
     font-size: 14px;
+}
+
+.input_error {
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url('./images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: 94%;
 }
 
 input:focus {
@@ -100,9 +105,17 @@ button:hover {
 .terms {
     font-size: 10px;
     margin-top: 15px;
+    color: hsl(246, 25%, 77%);
 }
 
 a, a:visited {
     text-decoration: none;
     color: hsl(0, 100%, 74%)
+}
+
+.error_message {
+    color: hsl(0, 100%, 74%);
+    font-size: 13px;
+    text-align: right;
+    margin-top: 3px;
 }

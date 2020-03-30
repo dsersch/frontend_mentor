@@ -23,15 +23,28 @@
       <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
     </div>
     <div class="card">
-      <form action="">
-        <input type="text" name="first" id="first" required placeholder="First Name">
-        <input type="text" name="last" id="last" required placeholder="Last Name">
-        <input type="email" name="email" id="email" required placeholder="Email Address">
-        <input type="password" name="password" id="password" required placeholder="Password">
+      <form novalidate id="form">
+        <div class="input_section">
+          <input type="text" name="first" id="first" required placeholder="First Name">
+          <p class="error_message"></p>
+        </div>
+        <div class="input_section">
+          <input type="text" name="last" id="last" required placeholder="Last Name">
+          <p class="error_message"></p>
+        </div>
+        <div class="input_section">
+          <input type="email" name="email" id="email" required placeholder="Email Address">
+          <p class="error_message"></p>
+        </div>
+        <div class="input_section">
+          <input type="password" name="password" id="password" required placeholder="Password">
+          <p class="error_message"></p>
+        </div>
         <button>Claim your free trial</button> 
       </form>
       <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
     </div>
   </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
