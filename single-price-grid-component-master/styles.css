@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240,240,240);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    width: 625px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgb(20, 20, 20, .3);
+}
+
+.top {
+    padding: 40px
+}
+
+.top h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.top h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    color: hsl(204, 43%, 93%);
+}
+
+.col {
+    width: 50%;
+    padding: 35px;
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+}
+
+.left h1 {
+    margin-bottom: 10px;
+}
+
+.left span {
+    font-size: 16px;
+    color: hsl(179, 72%, 53%);
+    position: relative;
+    bottom: 6px;
+}
+
+button {
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0 10px 10px rgb(20, 20, 20, .3);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: hsl(71, 68%, 49%);
+    transform: scale(1.05);
+}
+
+.right {
+    background-color: hsl(179, 67%, 48%);
+    line-height: 1.35;
+    border-radius: 0 0 10px 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        width: 90%;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .top h1 {
+        font-size: 18px;
+    }
+
+    .top h3 {
+        font-size: 16px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .left {
+        border-radius: 0;
+    }
+
+    .right {
+        border-radius: 0 0 10px 10px;
+    }
+}
