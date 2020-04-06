@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+h1, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+/* ---- NAV BAR ---- */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+}
+
+nav img {
+    height: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+}
+
+.buttons a {
+    color:hsl(273, 4%, 51%);
+    padding: 5px 20px;
+    transition: all .2s;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+.buttons a:hover {
+    color: hsl(270, 9%, 17%);
+    border: 1px solid hsl(270, 9%, 17%);
+}
+
+/*---- INTRO ----*/
+
+.intro {
+    background-color: hsl(256, 26%, 20%);
+    padding: 0 150px;
+    color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: row;
+}
+
+.pattern_left {
+    position: absolute;
+    top: 550px;
+}
+
+.pattern_right {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    z-index: 2;
+}
+
+.left {
+    padding: 125px 5px 0px 0px;
+}
+
+.left hr {
+    width: 110px;
+    margin-bottom: 75px;
+}
+
+.left h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.left p {
+    margin-bottom: 30px;
+}
+
+.body_button {
+    color: hsl(0, 0%, 98%);
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid hsl(0, 0%, 98%);
+    transition: all .3s;
+}
+
+.body_button:hover {
+    color: hsl(256, 26%, 20%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.right img {
+    position: relative;
+    top: 125px;
+    height: 95%;
+}
+
+/*---- MAIN SECTION ----*/
+
+.main {
+    padding: 300px 150px 200px 150px;
+}
+.main hr {
+    width: 110px;
+    margin-bottom: 75px;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-bottom: 75px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.card {
+    width: 33%;
+    padding-right: 36px;
+}
+
+.card img {
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.card p {
+    line-height: 1.5;
+    font-size: 17px;
+    color: hsl(273, 4%, 51%);
+}
+
+.how_we_work {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    padding: 30px 60px;
+    background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.how_we_work h1 {
+    font-size: 50px;
+    display: inline;
+}
+
+.hww_button {
+    float: right;
+    margin-top: -20px;
+}
+
+/*---- FOOTER ----*/
+
+footer {
+    background-color: hsl(0, 0%, 98%);
+    padding: 30px 150px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top img {
+    height: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+footer hr {
+    color: hsl(273, 4%, 51%);
+    margin-bottom: 30px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.links {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.links span {
+    margin-bottom: 15px;
+    color: hsl(273, 4%, 51%);
+}
+
+.links a {
+    color: hsl(256, 26%, 20%);;
+}
