@@ -175,6 +175,8 @@ a, a:active, a:visited {
 footer {
     background-color: hsl(0, 0%, 98%);
     padding: 30px 150px;
+    background-image: url('./images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
 }
 
 .top {
